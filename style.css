@@ -6,7 +6,7 @@
 
 .part-1 {
     height: 100vh;
-    background-image: url(source/фон-2.jpg);
+    background-image: url(source/fone-2.jpg);
     background-size: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,13 +18,10 @@
     padding-top: 10px;
     height: 10vh;
     justify-content: space-between;
-    font-size: 18px;
-    
-
+    font-family: "Cormorant Garamond", serif;
 }
 
 .navbar-main ul{
-    font-size: 18px;
     align-items: center;
 }
     
@@ -139,6 +136,14 @@
 }
 
 
+@media (max-width: 1175px) {
+    .title-main-1 h2 {
+        font-size: 19px;
+        font-weight: 500;
+        padding: 3vh 2vh;
+    }
+}
+
 @media (max-width: 1000px) {
     .navbar-main ul li{
         width:15%;
@@ -165,17 +170,6 @@
     }
 }
 
-@media (max-width: 1175px) {
-    .title-main-1 h2 {
-        font-size: 19px;
-        font-weight: 500;
-        padding: 3vh 2vh;
-    }
-}
-
-
-
-
 @media (max-width: 600px) {
 
     .button-contacts {
@@ -186,7 +180,70 @@
 
 }
 
+@media (max-width: 480px) {
+    .navbar-main ul li{
+        width:20%;
+        font-size: 15px;
+    }
 
+    .title-main-1 h1 {
+        font-size: 40px;
+        font-weight: 700;
+        padding-top: 14vh;
+    }
+
+    .title-main-1 h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 6vh;
+    }
+
+    .button-contacts {
+        margin-top: 8vh;
+    }
+
+    .connection {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 3vh 2vw;
+        border: white 2px solid;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 340px) {
+
+    .navbar-main ul li{
+        width:21%;
+        font-size: 13px;
+    }    
+
+    .navbar-main {
+        padding-top: 4px;
+        height: 10vh;
+        justify-content: space-between;
+    }
+
+    .title-main-1 h1 {
+        font-size: 30px;
+        font-weight: 700;
+        padding-top: 12vh;
+    }
+
+    .title-main-1 h3 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 6vh;
+    }
+
+    .button-contacts {
+        margin-top: 14vh;
+    }
+}
 
 
 /* -------------------------------------------------------PART_2------------------------------------------------------- */
@@ -218,6 +275,10 @@
 }
 
 .part-2 .phone {
+    display: none;
+}
+
+.part-2 .phone-mini {
     display: none;
 }
 
@@ -259,6 +320,40 @@
     }
 }
 
+@media (max-width: 480px) {
+
+    .part-2 h1 {
+        font-size: 20px;
+    }
+
+    .part-2 .phone {
+        display: none;
+    }
+
+    .part-2 .phone-mini {
+        display: inline;
+    }
+
+    .part-2 {
+        height: 175vh;
+    }
+
+    .part-2 h1 {
+        margin-bottom: 5vh;
+    }
+}
+
+@media (max-width: 340px) {
+    
+    .part-2 {
+        height: 168vh;
+    }
+
+    .part-2 h1 {
+        font-size: 16px;
+    }
+}
+
 /* -------------------------------------------------------PART_3------------------------------------------------------- */
 
 
@@ -266,7 +361,7 @@
 
 .part-3 {
     height: 240vh;
-    background-image: url(source/фон-3.jpeg);
+    background-image: url(source/fone-3.jpeg);
     background-size: no-repeat;
     background-position: center;
     background-size: cover;
@@ -331,6 +426,10 @@
     font-family: "Cormorant", serif;
 }
 
+.flex-text h2 {
+    font-size: 25px;
+}
+
 @media (max-width: 1105px) {
 
     .part-3 {
@@ -393,6 +492,85 @@
     .flex-item img {
         width: 40vw;
         height: 32vh;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .part-3 {
+        height: 620vh;
+    }
+
+    .part-3 h1 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .flex-item {
+        width: 60vw;
+        height: 54vh;
+    }
+
+    .flex-item h3 {
+        font-family: "Cormorant", serif;
+        font-size: 21px;
+    }
+
+    .flex-item img {
+        width: 40vw;
+        height: 32vh;
+    }
+
+    
+    .flex-text h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .part-3 {
+        height: 596vh;
+    }
+
+    .flex-item {
+        width: 60vw;
+        height: 52vh;
+    }
+
+    .flex-item h3 {
+        font-family: "Cormorant", serif;
+        font-size: 19px;
+    }
+
+    .flex-text h2 {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    .part-3 {
+        height: 555vh;
+    }
+
+    .part-3 h1 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .flex-item {
+        width: 60vw;
+        height: 48vh;
+    }
+
+    .flex-item h3 {
+        font-family: "Cormorant", serif;
+        font-size: 16px;
+    }
+
+    .flex-text h2 {
+        font-size: 15px;
     }
 }
 
@@ -492,6 +670,10 @@
         font-size: 20px;
     }
 
+    .title-main-4 h1 {
+        font-size: 30px;
+    }
+
 }
 
 @media (max-width: 680px) {
@@ -504,12 +686,13 @@
     .part-4 {
         height: 190vh;
     }
+
+    .title-main-4 h1 {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 520px) {
-    .part-4 {
-        height: 185vh;
-    }
 
     .reviews a h3{
         font-size: 17px;
@@ -517,7 +700,41 @@
 
 }
 
+@media (max-width: 480px) {
 
+    .part-4 {
+        height: 205vh;
+    }
+
+    .part-4 h1 {
+        padding-top: 7vh;
+    }
+
+    .reviews a{
+        padding: 3vh 1vw;
+        font-size: 20px;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .part-4 {
+        height: 188vh;
+    }
+}
+
+@media (max-width: 330px) {
+
+    .part-4 {
+        height: 176vh;
+    }
+
+    .reviews a h3{
+        font-size: 15px;
+    }
+}
 
 
 
@@ -545,6 +762,7 @@
     padding-top: 8vh;
     margin-top: 8vh;
 }
+
 
 .part-5 h3 {
     font-size: 23px;
@@ -581,4 +799,30 @@
 .account:hover {
     color: rgb(133, 138, 129);
     transition: ease 300ms;
+}
+
+@media (max-width: 480px) {
+    .part-5 .contacts-5 {
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 4vh;
+        margin-top: 8vh;
+    }
+
+    .part-5 h3 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .part-5 .accaounts-5 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 8vh;
+    }
+    
+    .networks img {
+        width: 20px;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
 }
